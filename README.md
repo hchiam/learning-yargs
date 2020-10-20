@@ -46,3 +46,5 @@ Or with `npm`: (triple-click to select all)
 ```bash
 git clone https://github.com/hchiam/learning-yargs.git; cd learning-yargs; npm install;
 ```
+
+And then run any of the `node my-cli.js` commands above.
