@@ -39,4 +39,18 @@ require("yargs")
       console.log(output);
     }
   )
+  .command(
+    // <required_argument> in angle brackets:
+    ["run <file_name>", "start", "play"], // later items in array are aliases
+    "To run file (this is just a test).", // <-- this string IS for the help printout
+    (yargs) => {
+      yargs.positional("file_name", {
+        type: "string",
+        describe: 'The file to "run"',
+      });
+    },
+    function (argv) {
+      console.log(`"Running" ${argv.file_name}...`);
+    }
+  )
   .help().argv;
