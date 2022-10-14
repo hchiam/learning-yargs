@@ -24,13 +24,14 @@ And then create `my-cli.js` and run any of these commands in CLI:
 
 ```bash
 node my-cli.js
-node my-cli.js --help # --help doc comes for free!
-node my-cli.js --version # --version comes for free!
-node my-cli.js hello --name Howard # hello command with name argument
-node my-cli.js hello # will use fallback/default value
-node my-cli.js hello Howard # positional argument
-node my-cli.js bye Howard # another command
-node my-cli.js --help bye # info on specific command (args, etc.)
+node my-cli # you don't need the .js!
+node my-cli --help # --help doc comes for free!
+node my-cli --version # --version comes for free!
+node my-cli hello --name Howard # hello command with name argument
+node my-cli hello # will use fallback/default value
+node my-cli hello Howard # positional argument
+node my-cli bye Howard # another command
+node my-cli --help bye # info on specific command (args, etc.)
 ```
 
 ## Starting by testing out this repo
