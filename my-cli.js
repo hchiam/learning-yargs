@@ -4,6 +4,14 @@ require("yargs")
   .scriptName("my-cli")
   .usage("$0 <cmd> [args]")
   .command(
+    "$0", // just node my-cli with no params!
+    "default short command with no params!",
+    (yargs) => {},
+    function (argv) {
+      console.log("default short command with no params!");
+    }
+  )
+  .command(
     "hello [name]", // <-- this string is NOT documentation!
     "welcome to yargs!", // <-- this string IS for the help printout
     (yargs) => {
