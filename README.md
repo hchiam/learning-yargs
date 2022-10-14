@@ -49,3 +49,7 @@ git clone https://github.com/hchiam/learning-yargs.git; cd learning-yargs; npm i
 ```
 
 And then run any of the `node my-cli.js` commands above.
+
+## Example using yargs with a default of no params, and reading a settings file
+
+https://github.com/hchiam/yargs_settings_test
